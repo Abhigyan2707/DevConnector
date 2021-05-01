@@ -66,7 +66,7 @@ async (req, res) => {
             { expiresIn: 360000 },
             (err, token)=>{
                 if(err) throw err;
-                require.json({ token });
+                res.json({ token });
             });
         
     }catch(err){
